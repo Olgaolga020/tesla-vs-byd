@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TESLA vs BYD - Porównanie Gigantów</title>
-    <!-- Nowoczesna czcionka geometryczna (Plus Jakarta Sans + Inter) -->
+    <!-- czcionka geometryczna (Plus Jakarta Sans + Inter) -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -85,7 +85,7 @@
             margin-bottom: 0;
         }
 
-        /* === PRZYCISK "KOMENTARZ" + BOKS WYŚWIETLANY BEZPOŚREDNIO POD PRZYCISKIEM (BEZ TYTUŁU, STOI W MIEJSCU SEKCJI) === */
+        /* === PRZYCISK "KOMENTARZ" + BOKS WYŚWIETLANY BEZPOŚREDNIO POD PRZYCISKIEM === */
         .comment-dropdown-wrap {
             position: relative;
             display: inline-block;
@@ -393,13 +393,13 @@
             margin-bottom: 14px;
         }
 
-        /* === 3. CO SIĘ ZMIENIŁO? (ORYGINALNE ODSTĘPY - BEZ POPRAWKI 1) === */
-        .mercedes-strips-section {
+        /* === 3. CO SIĘ ZMIENIŁO?  === */
+        .car-strips-section {
             background-color: #e6e3dc;
             color: #111;
         }
 
-        .mercedes-strips-section .section-header h2 { color: #111; }
+        .car-strips-section .section-header h2 { color: #111; }
 
         .battle-chart-box {
             position: relative;
@@ -556,7 +556,7 @@
 
         .counter-text p strong { color: #111; font-weight: 800; font-size: 1.05rem; }
 
-        /* === 5. MECHANIZM: GLOBALNE ŁAŃCUCHY WARTOŚCI (WIĘKSZE SAMOCHODY I GŁADKIE LINIE DOTYKAJĄCE AUT) === */
+        /* === 5. MECHANIZM: GLOBALNE ŁAŃCUCHY WARTOŚCI  === */
         .anatomy-section {
             background: radial-gradient(circle at 68% 58%, #161f2e 0%, #050608 70%);
             padding: 90px 8%;
@@ -651,7 +651,7 @@
             pointer-events: auto;
         }
 
-        /* Powiększone samochody w sekcji GVC, ustawione tak, aby gładkie linie trafiały bezpośrednio w ich sylwetkę */
+        /* Powiększone samochody w sekcji GVC */
         .anatomy-car-wrapper {
             position: absolute;
             left: 530px;
@@ -674,7 +674,7 @@
             filter: drop-shadow(0 22px 32px rgba(0,0,0,0.9));
         }
 
-        /* [ZMIEN_TUTAJ: ROZMIAR AUTA BYD W SEKCJI GVC] Powiększony samochód BYD */
+        /* Powiększony samochód BYD */
         #anatomyByd .anatomy-car-wrapper {
             left: 510px;
             bottom: 5px;
@@ -699,7 +699,7 @@
             overflow: visible;
         }
 
-        /* Gładkie linie krzywe (Cubic Bezier) biegnące płynnie do punktów na aucie */
+        /* Gładkie linie krzywe (Cubic Bezier)  */
         .bent-line {
             fill: none;
             stroke: #ffffff;
@@ -944,7 +944,7 @@
             margin-left: 4px;
         }
 
-        /* === 8. MECHANIZM: POLITYKA PRZEMYSŁOWA (ORYGINALNE WYMIARY KART I WIERSZY - BEZ POPRAWKI 2) === */
+        /* === 8. MECHANIZM: POLITYKA PRZEMYSŁOWA === */
         .drivers-style-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
@@ -1511,21 +1511,21 @@
             opacity: 0.85;
             text-align: left;
         }
-        .mercedes-strips-section .section-source {
-            color: #555555; /* Dopasowanie do jasnego tła wykresu */
+        .car-strips-section .section-source {
+            color: #555555; 
         }
     </style>
 </head>
 <body>
 
-    <!-- NAWIGACJA: W LEWYM GÓRNYM ROGU MAŁY CZERWONY NAPIS IMIĘ I NAZWISKO OBOK "1. TEMAT" -->
+    <!-- NAWIGACJA:  -->
     <nav>
         <div class="nav-left-group">
             <a href="#hero" class="logo-link">
-                <!-- [ZMIEN_TUTAJ: LOGO PG/WZI] -->
+                <!--  -->
                 <img src="" alt="Logo" class="logo-img" onerror="this.style.display='none'">
             </a>
-            <!-- [ZMIEN_TUTAJ: WPISZ SWOJE IMIĘ I NAZWISKO] -->
+            <!--  -->
             <span class="author-name-badge">Bartłomiej Duda | Olga Dawidowicz</span>
         </div>
         <ul class="nav-links">
@@ -1548,7 +1548,7 @@
          1. STRONA TYTUŁOWA
     ======================================================================== -->
     <section id="hero" class="hero nav-tracked-section">
-        <!-- [ZMIEN_TUTAJ: WIDEO TŁO] -->
+        <!-- [WIDEO TŁO] -->
         <video autoplay loop muted playsinline poster="auto.mp4">
             <source src="auto.mp4" type="video/mp4">
         </video>
@@ -1570,7 +1570,7 @@
 
         <div class="duel-row">
             <div class="duel-car-box left-box" id="scrollCarLeft">
-                <!-- [ZMIEN_TUTAJ: PNG TESLA LEWA STRONA] -->
+                <!-- [ PNG TESLA LEWA STRONA] -->
                 <img src="tesla_bok.png" alt="Tesla">
             </div>
 
@@ -1593,16 +1593,16 @@
             </div>
 
             <div class="duel-car-box right-box" id="scrollCarRight">
-                <!-- [ZMIEN_TUTAJ: PNG BYD PRAWA STRONA] -->
+                <!-- [PNG BYD PRAWA STRONA] -->
                 <img src="byd.png" alt="BYD">
             </div>
         </div>
     </section>
 
     <!-- =======================================================================
-         3. CO SIĘ ZMIENIŁO? (ORYGINALNE ODSTĘPY + KOMENTARZ POD PRZYCISKIEM)
+         3. CO SIĘ ZMIENIŁO?
     ======================================================================== -->
-    <section id="wykres" class="section-padding mercedes-strips-section nav-tracked-section">
+    <section id="wykres" class="section-padding car-strips-section nav-tracked-section">
         <div class="section-header">
             <h2>CO SIĘ ZMIENIŁO?</h2>
             <div class="comment-dropdown-wrap">
@@ -1675,7 +1675,7 @@
                         <text x="670" y="236" text-anchor="middle" fill="#475569" font-weight="800" font-size="13">1 636</text>
                     </g>
 
-                    <!-- Punkty BYD (Czerwone) -->
+                    <!-- Punkty BYD  -->
                     <g class="chart-point-group" data-step="0">
                         <circle cx="70" cy="292" r="5.5" fill="#e82127" stroke="#fff" stroke-width="2"/>
                         <text x="45" y="296" text-anchor="end" fill="#e82127" font-weight="800" font-size="13">190</text>
@@ -1701,14 +1701,14 @@
                         <text x="670" y="22" text-anchor="middle" fill="#e82127" font-weight="800" font-size="14">4 602</text>
                     </g>
 
-                    <!-- Samochodziki PNG jadące po wykresie -->
+                    <!-- Samochodziki -->
                     <g id="racerTesla" class="racing-car-racer">
-                        <!-- [ZMIEN_TUTAJ: MAŁY SAMOCHODZIK PNG NA WYKRESIE - TESLA] -->
+                        <!-- [ MAŁY SAMOCHODZIK PNG NA WYKRESIE - TESLA] -->
                         <image href="rok_tesla2.png" x="-34" y="-22" width="68" height="36" />
                     </g>
 
                     <g id="racerByd" class="racing-car-racer">
-                        <!-- [ZMIEN_TUTAJ: MAŁY SAMOCHODZIK PNG NA WYKRESIE - BYD] -->
+                        <!-- [ MAŁY SAMOCHODZIK PNG NA WYKRESIE - BYD] -->
                         <image href="byd_race.png" x="-34" y="-22" width="68" height="36" />
                     </g>
                 </svg>
@@ -1718,7 +1718,7 @@
     </section>
 
     <!-- =======================================================================
-         4. BATERIE (CENY PAKIETU BATERII 2025 + KOMENTARZ POD PRZYCISKIEM)
+         4. BATERIE 
     ======================================================================== -->
     <section id="baterie" class="section-padding counters-section nav-tracked-section">
         <div class="section-header">
@@ -1770,7 +1770,7 @@
     </section>
 
     <!-- =======================================================================
-         5. MECHANIZM: GLOBALNE ŁAŃCUCHY WARTOŚCI (WIĘKSZE SAMOCHODY + GŁADKIE LINIE DOTYKAJĄCE AUT + KOMENTARZ POD PRZYCISKIEM)
+         5. MECHANIZM: GLOBALNE ŁAŃCUCHY WARTOŚCI
     ======================================================================== -->
     <section id="anatomia" class="anatomy-section nav-tracked-section">
         <div class="anatomy-top-bar">
@@ -1802,21 +1802,21 @@
             <!-- SLAJD 1: TESLA -->
             <div class="anatomy-slide active animate-lines" id="anatomyTesla">
                 <div class="anatomy-car-wrapper">
-                    <!-- [ZMIEN_TUTAJ: PNG TESLI DO WSKAŹNIKÓW] -->
+                    <!-- [ PNG TESLI DO WSKAŹNIKÓW] -->
                     <img src="rok_tesla.png" alt="Tesla Technologia">
                 </div>
 
-                <!-- Gładkie krzywe Beziera sięgające prosto na maskę, szybę i koła powiększonego samochodu -->
+                <!-- Gładkie krzywe Beziera -->
                 <svg class="anatomy-svg-lines" viewBox="0 0 1200 420" preserveAspectRatio="none">
-                    <!-- Linia 1: Gładki łuk od notatki 1 do przedniej szyby / dachu (x=835, y=185) -->
+                    <!-- Linia 1:  -->
                     <path class="bent-line line-1" d="M 550,95 C 550,155 720,165 835,185" />
                     <circle class="bent-dot dot-1" cx="835" cy="185" r="6.5" />
 
-                    <!-- Linia 2: Gładka krzywa od notatki 2 do przedniej maski / reflektora (x=675, y=245) -->
+                    <!-- Linia 2: -->
                     <path class="bent-line line-2" d="M 260,155 C 460,155 560,225 675,245" />
                     <circle class="bent-dot dot-2" cx="675" cy="245" r="6.5" />
 
-                    <!-- Linia 3: Gładka krzywa od notatki 3 do podwozia / przedniego koła (x=795, y=325) -->
+                    <!-- Linia 3:  -->
                     <path class="bent-line line-3" d="M 260,305 C 500,305 650,325 795,325" />
                     <circle class="bent-dot dot-3" cx="795" cy="325" r="6.5" />
                 </svg>
@@ -1843,21 +1843,21 @@
             <!-- SLAJD 2: BYD -->
             <div class="anatomy-slide" id="anatomyByd">
                 <div class="anatomy-car-wrapper">
-                    <!-- [ZMIEN_TUTAJ: PNG BYD DO WSKAŹNIKÓW] -->
+                    <!-- [PNG BYD DO WSKAŹNIKÓW] -->
                     <img src="byd_race2.png" alt="BYD Technologia">
                 </div>
 
-                <!-- Gładkie krzywe Beziera dotykające bezpośrednio powiększonego auta BYD -->
+                <!-- Gładkie krzywe Beziera -->
                 <svg class="anatomy-svg-lines" viewBox="0 0 1200 420" preserveAspectRatio="none">
-                    <!-- Linia 1: Gładki łuk do przedniej szyby / czujników BYD (x=835, y=185) -->
+                    <!-- Linia 1: -->
                     <path class="bent-line line-1" d="M 550,95 C 550,155 720,165 835,185" />
                     <circle class="bent-dot dot-1" cx="835" cy="185" r="6.5" />
 
-                    <!-- Linia 2: Gładka krzywa do maski / reflektora BYD (x=675, y=245) -->
+                    <!-- Linia 2:-->
                     <path class="bent-line line-2" d="M 260,155 C 460,155 560,225 675,245" />
                     <circle class="bent-dot dot-2" cx="675" cy="245" r="6.5" />
 
-                    <!-- Linia 3: Gładka krzywa do koła / baterii Blade w podwoziu BYD (x=795, y=325) -->
+                    <!-- Linia 3:  -->
                     <path class="bent-line line-3" d="M 260,305 C 500,305 650,325 795,325" />
                     <circle class="bent-dot dot-3" cx="795" cy="325" r="6.5" />
                 </svg>
@@ -1953,7 +1953,7 @@
     </section>
 
     <!-- =======================================================================
-         7. PUNKT ZWROTNY | POLITYKA PRZEMYSŁOWA (KOMENTARZ POD PRZYCISKIEM)
+         7. PUNKT ZWROTNY | POLITYKA PRZEMYSŁOWA 
     ======================================================================== -->
     <section id="dane" class="section-padding tech-specs-section nav-tracked-section">
         <div class="section-header">
@@ -1990,7 +1990,7 @@
     </section>
 
     <!-- =======================================================================
-         8. MECHANIZM: POLITYKA PRZEMYSŁOWA (ORYGINALNE WYMIARY KART I WIERSZY + KOMENTARZ POD PRZYCISKIEM)
+         8. MECHANIZM: POLITYKA PRZEMYSŁOWA
     ======================================================================== -->
     <section id="karty" class="section-padding nav-tracked-section">
         <div class="section-header">
@@ -2017,7 +2017,7 @@
                         </div>
 
                         <div class="driver-car-center-box">
-                            <!-- [ZMIEN_TUTAJ: PNG TESLA DO KARTY] -->
+                            <!-- [PNG TESLA DO KARTY] -->
                             <img src="Tesla_logo.png" alt="Tesla">
                         </div>
                     </div>
@@ -2062,7 +2062,7 @@
                         </div>
 
                         <div class="driver-car-center-box">
-                            <!-- [ZMIEN_TUTAJ: PNG BYD DO KARTY] -->
+                            <!-- [ PNG BYD DO KARTY] -->
                             <img src="byd_logo.png" alt="BYD">
                         </div>
                     </div>
@@ -2157,7 +2157,7 @@
     </section>
 
     <!-- =======================================================================
-         10. CZY MODEL JEST TRWAŁY? (KOMENTARZ POD PRZYCISKIEM)
+         10. CZY MODEL JEST TRWAŁY?
     ======================================================================== -->
     <section id="marza" class="margin-section nav-tracked-section">
         <div class="margin-container">
@@ -2227,7 +2227,7 @@
     </section>
 
     <!-- =======================================================================
-         11. PROBLEM-POSITION (KOMENTARZ POD PRZYCISKIEM)
+         11. PROBLEM-POSITION
     ======================================================================== -->
     <section id="cta" class="cta-parallax nav-tracked-section">
         <div class="cta-header-center">
@@ -2272,21 +2272,21 @@
 
         <div class="questions-grid">
             <div class="question-car-square">
-                <!-- [ZMIEN_TUTAJ: PNG SAMOCHÓD 1 DO PYTANIA 1] -->
+                <!-- [ PNG SAMOCHÓD 1 DO PYTANIA 1] -->
                 <img src="rok_tesla.png" alt="Samochód 1">
                 <div class="question-num">1</div>
                 <p>Czy otwarcie fabryki Tesli w Szanghaju w 2019 r. było sukcesem chińskiej polityki przemysłowej, czy początkiem uzależnienia Tesli od Chin?</p>
             </div>
 
             <div class="question-car-square">
-                <!-- [ZMIEN_TUTAJ: PNG SAMOCHÓD 2 DO PYTANIA 2] -->
+                <!-- [ PNG SAMOCHÓD 2 DO PYTANIA 2] -->
                 <img src="byd_pyt.png" alt="Samochód 2">
                 <div class="question-num">2</div>
                 <p>Gdzie kończy się wspieranie własnego przemysłu, a zaczyna nieuczciwa konkurencja? Czy cła na chińskie auta w UE i USA chronią lokalne firmy, czy przede wszystkim podnoszą ceny dla konsumentów?</p>
             </div>
 
             <div class="question-car-square">
-                <!-- [ZMIEN_TUTAJ: PNG SAMOCHÓD 3 DO PYTANIA 3] -->
+                <!-- [ PNG SAMOCHÓD 3 DO PYTANIA 3] -->
                 <img src="tesla.png" alt="Samochód 3">
                 <div class="question-num">3</div>
                 <p>Czy rozwój AI, oprogramowania i robotyki pozwoli Tesli odzyskać przewagę, czy o sukcesie nadal będą decydować koszty i skala produkcji, w których mocny jest BYD?</p>
