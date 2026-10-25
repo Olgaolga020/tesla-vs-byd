@@ -1849,13 +1849,16 @@
             </div>
 
             <div class="anatomy-controls">
-                <div class="comment-dropdown-wrap">
-					<button class="comment-trigger-btn" onclick="openGvcImage('gvcTeslaBox')" style="margin-bottom: 8px; display: block;">
-    GVC: Tesla
-</button>
-<button class="comment-trigger-btn" onclick="openGvcImage('gvcBydBox')" style="margin-bottom: 8px; display: block;">
-    GVC: BYD
-</button>
+<div class="comment-dropdown-wrap" style="display: flex; flex-direction: column; align-items: flex-end;">
+                    <!-- Przycisk dla Tesli (widoczny na stronie 1) -->
+                    <button type="button" id="btnGvcTesla" class="comment-trigger-btn" onclick="openGvcImage('gvcTeslaBox')" style="margin-bottom: 8px;">
+                        <i class="fa-regular fa-image"></i> Zdjęcie: Tesla
+                    </button>
+
+                    <!-- Przycisk dla BYD (ukryty na starcie, pojawia się na stronie 2) -->
+                    <button type="button" id="btnGvcByd" class="comment-trigger-btn" onclick="openGvcImage('gvcBydBox')" style="margin-bottom: 8px; display: none;">
+                        <i class="fa-regular fa-image"></i> Zdjęcie: BYD
+                    </button>
                     <button type="button" class="comment-trigger-btn" onclick="toggleInlineComment(this)">
                         <i class="fa-regular fa-comment-dots"></i> Komentarz
                     </button>
@@ -2623,18 +2626,33 @@
         anatomyObserver.observe(anatomySection);
     </script>
 	<script>
-		function openGvcImage(boxId) {
-    // Najpierw zamyka inne otwarte okienko GVC, jeśli było włączone
+function openGvcImage(boxId) {
     document.getElementById('gvcTeslaBox').classList.remove('active');
     document.getElementById('gvcBydBox').classList.remove('active');
-    
-    // Pokazuje wybrany obrazek
     document.getElementById(boxId).classList.add('active');
 }
 
 function closeGvcImage(boxId) {
     document.getElementById(boxId).classList.remove('active');
 }
+
+// Automatycznie podmienia przycisk nad Komentarzem, gdy klikniesz strzałkę zmiany slajdu (Tesla <-> BYD)
+document.querySelectorAll('#anatomia .anatomy-arrow').forEach(arrow => {
+    arrow.addEventListener('click', function() {
+        setTimeout(() => {
+            const teslaSlide = document.getElementById('anatomyTesla');
+            const isTeslaActive = teslaSlide.classList.contains('active');
+            
+            // Zamyka otwarte zdjęcia przy przełączeniu auta
+            closeGvcImage('gvcTeslaBox');
+            closeGvcImage('gvcBydBox');
+
+            // Pokazuje odpowiedni przycisk
+            document.getElementById('btnGvcTesla').style.display = isTeslaActive ? ' inline-flex' : 'none';
+            document.getElementById('btnGvcByd').style.display = isTeslaActive ? 'none' : 'inline-flex';
+        }, 50);
+    });
+});
 function openBatteryVideo() {
     const box = document.getElementById('batteryVideoBox');
     const video = document.getElementById('batteryVideoPlayer');
